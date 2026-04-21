@@ -1,30 +1,40 @@
-# Claude Limit Indicator – Safari
+# Claude Limit Indicator – Chrome
 
-A Safari extension for macOS that shows your Claude.ai usage limits 
-directly in the sidebar.
+A Chrome extension that shows your Claude.ai usage limits directly in the sidebar.
 
 ![screenshot](screenshot.png)
 
 ## Features
 - Session (5-hour) and weekly (7-day) usage bars
 - Color coded: 🟢 green → 🟡 yellow at 60% → 🔴 red at 80%
-- Works for all account types (free and paid)
+- Reset countdown timers
+- Token count + cache timer per conversation
 - Hides automatically when sidebar is collapsed
 - No data stored, no external requests
 
 ## Installation
 
-Requires Xcode on macOS. No Apple Developer account needed.
+> No developer account needed. Works in Chrome, Brave, Arc, and any Chromium browser.
 
-1. Clone this repo
-2. Open Terminal in the project folder and run:
+1. Clone or download this repo
 ```bash
-   xcrun safari-web-extension-converter /path/to/safari-extension
+git clone https://github.com/YOUR_USERNAME/claude-counter-chrome.git
 ```
-3. Open the generated `.xcodeproj` in Xcode → press ⌘R
-4. Go to Safari → Settings → Extensions → enable **Claude Limit Indicator**
-5. Go to Safari → Develop → Allow Unsigned Extensions
 
-> You'll need to re-enable "Allow Unsigned Extensions" each time you restart your Mac.
+2. Open Chrome and go to `chrome://extensions`
 
-# claude-limit-indicator-chrome
+3. Enable **Developer mode** (toggle in the top right)
+
+4. Click **Load unpacked** and select the `claude-counter-chrome` folder
+
+5. Open [claude.ai](https://claude.ai) — the usage bars will appear in the sidebar
+
+## Usage
+
+- Open the sidebar on claude.ai to see your usage
+- Click the usage panel to manually refresh
+- Bars update automatically after every message and every 60 seconds
+
+## Also available for Safari
+
+👉 [claude-counter-safari](https://github.com/YOUR_USERNAME/claude-counter-safari)
