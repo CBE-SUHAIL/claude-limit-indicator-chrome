@@ -2,7 +2,7 @@
 
 A Chrome extension that shows your Claude.ai usage limits directly in the sidebar.
 
-![screenshot](screenshot.png)
+![screenshot](sidebar_on.png)
 
 ## Features
 - Session (5-hour) and weekly (7-day) usage bars
